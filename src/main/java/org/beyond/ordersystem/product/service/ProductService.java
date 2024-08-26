@@ -57,7 +57,7 @@ public class ProductService {
 
 
             byte[] bytes = image.getBytes();
-            Path path = Paths.get("/tmp/", product.getId() + "_" + image.getOriginalFilename());
+            Path path = Paths.get("/tmp", product.getId() + "_" + image.getOriginalFilename());
             Files.write(path, bytes, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
 
             product.updateImagePath(path.toString()); // dirty checking
