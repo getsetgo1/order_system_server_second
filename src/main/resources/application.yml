@@ -50,7 +50,7 @@ cloud:
       access-key: xxx
       secret-key: yyy
     region:
-      static: ap-southease-2
+      static: ap-southeast-2
     s3:
       bucket: woojin-bucket
 
